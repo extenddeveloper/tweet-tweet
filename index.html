@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Product-catalog</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .tweet-delete{
+        cursor: pointer;
+        margin-left: 10px;;
+      }
+      .tweet-update{
+        cursor: pointer;
+      }
+      .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+    .tweet {
+      display: flex;
+      justify-content: start;
+  }
+  .tweet p{
+    margin: 0;
+  }
+    </style>
+  </head>
+  <body>
+    <section class="py-50">
+        <nav class="navbar navbar-dark bg-dark d-flex mb-4">
+            <h1 class="navbar-brand m-auto">Tweet Tweet Project</h1>
+        </nav>
+            <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                <textarea name="" id="" class="form-control tweet-text" cols="10" rows="6" placeholder="What's On Your Mind..?"></textarea>
+                                <div class="tweet-text-count text-right">
+                                  <p><span class="current-text">0</span>/<span class="max-text">250</span></p>
+                                  <p class="err-msg"></p>
+                                </div>
+                                </div>
+                            </div>
+                            <button class="btn mt-3 btn-block btn-primary tweet-submit">Tweet</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <nav class="navbar navbar-dark bg-dark d-flex">
+                        <input type="text" name="filter" class="form-control m-3" id="filter" placeholder="Search Tweet..." />
+                    </nav>
+                    <div class="card card-body">
+                        <ul class="list-group collection">
+
+                          /*----------  Tweets Will be added here.  ----------*/
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <script src="./moment.js"></script>
+    
+  </body>
+</html>
